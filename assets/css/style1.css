@@ -1170,10 +1170,11 @@
 }
 /*=========================================================================contact-section=end==============================================================================*/
  .footer-last{
-     background-image:url(../img-1/footer-last.jpg);
+     /* background-image:url(../img-1/footer-last.jpg);
      background-repeat:no-repeat;
      background-size:cover;
-     padding:90px 0px 50px;
+     padding:90px 0px 50px; */
+     background-color: #023675;
 }
  .footer-last .contact-outer  .arrow{ width:18px;}
  .footer-last .contact-outer .contact-heading h2{
@@ -1350,6 +1351,7 @@
 }
  .footer {
      background:#f7faff;
+     height: 50px;
 }
  .footer ul {
      padding:0px;

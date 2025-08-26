@@ -7,6 +7,9 @@
     <title>Delware | Just another Steel Themes Sites site</title>
     <link type="text/css" rel="stylesheet" href="../assets/css/bootstrap.min.css" />
     <link type="text/css" rel="stylesheet" href="../assets/css/responsive.css" />
+    <link type="text/css" rel="stylesheet" href="../assets/css/inner-page-style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
     <!-- Libraries CSS Files -->
     <link href="../assets/css/font-awesome.css" rel="stylesheet">
     <!-- Main Stylesheet File -->
@@ -25,86 +28,107 @@
     <!--------owl--------->
     <link type="text/css" rel="stylesheet" href="../assets/owl/assets/owl.carousel.min.css">
     <link type="text/css" rel="stylesheet" href="../assets/owl/assets/owl.theme.default.min.css" />
+
     <!------owl--------->
+
+    
+
+
+    <style>
+        .founder-section {
+            align-items: center; /* Vertically center content */
+            }
+
+            .founder-image-wrapper {
+            width: 100%;
+            height: 100%;
+            overflow: hidden; /* Crop if needed */
+            }
+
+            .founder-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Full cover look */
+            border-radius: 8px; /* Optional rounded corners */
+            }
+
+            /* TEAM SECTION STYLING */
+            #team-section {
+                padding: 80px 0;
+                background: #f9f9f9;
+                text-align: center;
+                margin-top: 20px;
+            }
+
+            #team-section .section-subtitle {
+                color: #777;
+                font-size: 16px;
+                letter-spacing: 2px;
+                margin-bottom: 10px;
+            }
+
+            #team-section .section-title {
+                font-size: 36px;
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+
+            #team-section .section-description {
+                max-width: 800px;
+                margin: 0 auto 50px auto;
+                color: #555;
+                line-height: 1.6;
+            }
+
+            .team-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 30px;
+                justify-content: center;
+                align-items: stretch;
+            }
+
+            .team-member {
+                background: #fff;
+                border-radius: 10px;
+                padding: 20px;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            .team-member:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            }
+
+            .member-image img {
+                width: 100%;
+                border-radius: 10px;
+                margin-bottom: 15px;
+            }
+
+            .member-name {
+                font-size: 20px;
+                font-weight: 600;
+                margin: 10px 0;
+            }
+
+            .member-info {
+                font-size: 14px;
+                color: #666;
+                line-height: 1.5;
+            }
+
+            
+            
+
+    </style>
 </head>
 
 <body>
     <div class="preloader" id="preloader"></div>
     <div id="page" class="page-wrapper header-sticky header-v1 hide-topbar-mobile header-sticky">
-        <section id="top-header" class="top-sec">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
-                        <div class="row">
-                            <div class="top-col in col-sm-12 col-sm-12 col-md-2 col-lg-2">
-                                <div class="input-group tab">
-                                    <span class="input-group-addon"><i class="flaticon-internet top-gob"></i>Location:</span>
-                                    <select class="form-control top " id="washroomtype" onchange="ShowHideDiv2()">
-                                        <option class="active">NewYork </option>
-                                        <option>London</option>
-                                        <option>Paris</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <script>
-                                function ShowHideDiv2() {
-                                    var washroomtype = document.getElementById("washroomtype");
-                                    var washroomtypeselect = document.getElementById("washroomtypeselect");
-                                    washroomtypeselect1.style.display = washroomtype.value == "NewYork" ? "block" : "none";
-                                    washroomtypeselect2.style.display = washroomtype.value == "London" ? "block" : "none";
-                                    washroomtypeselect3.style.display = washroomtype.value == "Paris" ? "block" : "none";
-                                }
-                            </script>
-                            <div class="top-col col-lg-8 col-md-8 col-xs-12 col-sm-12">
-                                <div id="washroomtypeselect1">
-                                    <div class="col-sm-12">
-                                        <div class="input-group">
-                                            <ul>
-                                                <li><span class="flaticon-pin"></span> Wilmington, 198, Delaware Bridge St.</li>
-                                                <li><span class="flaticon-phone-1"></span> 1 (857) 899-0009</li>
-                                                <li><span class="flaticon-clock"></span> Mon - Sat: 9.00 to 19.00</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="washroomtypeselect2">
-                                    <div class="col-sm-12">
-                                        <div class="input-group">
-                                            <ul>
-                                                <li><span class="flaticon-pin"></span> Wilmington, 198, Delaware Bridge St.</li>
-                                                <li><span class="flaticon-phone-1"></span> 1 (897) 8999-009</li>
-                                                <li><span class="flaticon-clock"></span> Mon - Sat: 11.00 to 9.00</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="washroomtypeselect3" >
-                                    <div class="col-sm-12">
-                                        <div class="input-group">
-                                            <ul>
-                                                <li><span class="flaticon-pin"></span> Wilmington, 198, Delaware Bridge St.</li>
-                                                <li><span class="flaticon-phone-1"></span> 1 (022) 099-0009</li>
-                                                <li><span class="flaticon-clock"></span> Mon - Sat: 9.00 to 11.00</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="top-col col-lg-2 col-md-2 col-xs-12 col-sm-12">
-                                <div class="span12">
-                                    <form method="get" action="index1.html" class="form-inline search-outer">
-                                        <input name="search" class="form-control search" type="text" placeholder="Search:">
-                                        <button type="submit" class="btn btn-primary"> <i class="fas fa-search"></i></button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!---row-end--->
-            </div>
-            <!---container-end--->
-        </section>
+        
         <!-- masthead -->
         <header id="masthead" class="site-header clearfix">
             <div class="header-main">
@@ -125,17 +149,17 @@
                             </div>
                             <nav id="site-navigation" class="main-nav primary-nav nav">
                                 <ul id="primary-menu" class="menu pull-right">
-                                    <li class="dropdown-item current-menu-item">
-                                        <a href="#">Home</a>
+                                    <li class="dropdown-item current-menu-item active">
+                                        <a href="../pages/home.php">Home</a>
                                     </li>
                                     <li class="dropdown-item">
-                                        <a href="#">About</a>
+                                        <a href="../pages/about.php">About</a>
                                     </li>
-                                    <li class="dropdown-item">
-                                        <a href="#">Services</a>
+                                    <li>
+                                        <a href="../pages/service.php">Services</a>
                                     </li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                    <li><a href="contact.html">Careers</a></li>
+                                    <li><a href="../pages/contact.php">Contact</a></li>
+                                    <li><a href="../pages/career.php">Careers</a></li>
                                     <!--space--->
                                     <li></li>
                                     <li class="in"><a><i class="fab fa-facebook-f"></i></a></li>
@@ -161,7 +185,7 @@
                 
             </li>
             <li class="dropdown-item menu-item-has-children">
-                <a href="#">About</a>
+                <a href="../pages/about.php">About</a>
                 
             </li>
             <li class="dropdown-item menu-item-has-children">
